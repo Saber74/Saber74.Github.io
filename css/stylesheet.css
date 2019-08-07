@@ -1,0 +1,451 @@
+/*Logo Colors
+Maple Leaf - (255, 0, 0)
+Molecule Red - (205, 0, 0)
+Molecule Grey - (205, 205, 205)
+Bright Yellow - (255, 240, 45)
+Dark Yellow - (245, 210, 45)
+*/
+.collapse{
+  background-color: #ffbb33;
+  color: #5f0f40;
+}
+.card{
+  background-color: #e9f7ca;
+  color: White;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  background-color: #17182f;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+#particles-js{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #000;
+  background-image: linear-gradient(to bottom right ,#251A4F, #0F695F,#15072C,#0A073E);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  z-index:-1;
+}
+/* Navigation Bar */
+nav i{
+  color: #777;
+}
+nav i:hover {
+	color: white;
+}
+.btn-dark {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media only screen and (max-width: 850px) {
+  #laptopnav {
+    display: none;
+  }
+}
+@media only screen and (min-width: 851px) {
+  #phonenav {
+    display: none;
+  }
+}
+/* Home Screen */
+#aboutimg {
+  max-width:50%;
+  height:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-outline-danger {
+  color: red;
+  border-color: black;
+  background-color: white;
+}
+.btn-outline-danger:hover {
+  background-color: #D61919;
+  border-color: #D61919;
+  color: white;
+}
+.parent {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+.child {
+  margin: 5px;
+  font-size: 1em;
+  text-align: center;
+}
+#about, #events, #membership{
+  width: 100%;
+  background-color: rgba(255,255,255,0.3);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.row-centered {
+  text-align: center;
+}
+.col-centered {
+  margin: 0 auto;
+  float: none;
+}
+#note{
+  color:white;
+  font-size: 1em;
+}
+#comic,#openstreet{
+  font-size: 30px;
+  color: #28a745;
+  font-weight: 600;
+  padding-top:25px;
+  padding-bottom:20px;
+  text-align: center;
+}
+#comiclogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%;
+  height: auto;
+}
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+h1.home, h1.events{
+  text-align: center;
+  color: yellow;
+  font-size: 2em;
+  font-weight: 700;
+}
+#inline{
+  display: inline;
+
+}
+.hours{
+  text-align: center;
+  color: white;
+}
+.price{
+  text-align: center;
+  color: white;
+}
+.left{
+  text-align: left;
+}
+#description, #jobs{
+  background-color: rgba(255,255,0,0.3);
+  padding: 20px;
+  color: white;
+}
+#timeline, #donate, #visit{
+  background-color: rgba(255,0,0,0.3);
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#volunteer{
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: rgba(255,255,0,0.3);
+}
+#volunteerjob{
+  background-color: rgba(255,255,255,0.1);
+  padding: 20px;
+  color: white;
+}
+/*****************************************************/
+.timeline .timeline-item::after, .timeline .timeline-item::before {
+  clear: both;
+  content: '';
+  display: block;
+  width: 100%;
+}
+
+.timeline {
+  margin: 30px auto;
+  padding: 0 10px;
+  position: relative;
+  transition: all 0.25s ease-in;
+  width: 100%;
+}
+
+.timeline::before {
+  background: #fefefe;
+  content: '';
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  width: 3px;
+}
+
+.timeline::after {
+  clear: both;
+  content: '';
+  display: table;
+  width: 100%;
+}
+
+
+.timeline .timeline-item {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timeline .timeline-item .timeline-icon {
+  background: #fefefe;
+  border-radius: 50%;
+  height: 50px;
+  left: 50%;
+  margin-left: -23px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 50px;
+}
+
+.timeline .timeline-item .timeline-icon img,
+.timeline .timeline-item .timeline-icon svg {
+  left: 14px;
+  position: relative;
+  top: 11px;
+}
+
+.timeline .timeline-item .timeline-icon svg {
+  top: 14px;
+}
+
+.timeline .timeline-item .timeline-content {
+  padding: 20px;
+  text-align: right;
+  transition: all 0.25s ease-in;
+  width: 45%;
+  background: transparent;
+}
+
+.timeline .timeline-item .timeline-content p {
+  color: #fefefe;
+}
+
+.timeline .timeline-item .timeline-content p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.timeline .timeline-item .timeline-content .timeline-content-date {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.timeline .timeline-item .timeline-content .timeline-content-month {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.timeline .timeline-item .timeline-content.right {
+  float: right;
+  text-align: left;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .timeline {
+    margin: 30px;
+    padding: 0;
+    width: 90%;
+  }
+  .timeline::before {
+    left: 0;
+  }
+  .timeline .timeline-item .timeline-content {
+    float: right;
+    text-align: left;
+    width: 90%;
+  }
+  .timeline .timeline-item .timeline-content::before, .timeline .timeline-item .timeline-content.right::before {
+    border-left: 0;
+    border-right: 7px solid #fefefe;
+    left: 10%;
+    margin-left: -6px;
+  }
+  .timeline .timeline-item .timeline-icon {
+    left: 0;
+  }
+}
+
+/***************************************************************/
+/* Events */
+h1.events {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#daycamp, #tour, #birthday, #farmersmarket, #specialevents {
+  margin-top: 20px;
+  background-color: rgba(43, 13, 144,0.3);
+  padding: 40px;
+  color: white;
+}
+a.events {
+  color: #ffc107;
+  font-weight: 800;
+}
+a.events:hover {
+  color: White;
+}
+img.calendar {
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
+img.dc {
+  width: 35%;
+  height: auto;
+  margin: 5px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+}
+hr.events {
+  color: grey;
+}
+.btn-outline-warning {
+  color: #000000;
+  border-color: #000000;
+}
+#daycampregister {
+  margin-bottom: 20px;
+}
+#daycampregister:hover{
+  color: white;
+}
+
+#farmersmarket {
+  margin-bottom: 20px;
+}
+.market-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%;
+  height: auto;
+}
+/*Donate*/
+#donateb{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-decoration: none;
+}
+#donateb:hover{
+  color:white;
+  text-decoration: none;
+}
+#donate a,a:hover{
+  text-decoration: none;
+}
+
+/*Partners*/
+#partners {
+  margin-bottom: 30px;
+  background-color: rgba(255,255,255,0.5);
+  padding: 20px;
+  color: white;
+}
+#call{
+  font-weight: 900;
+  font-size: 2em;
+  color: #66AFDB;
+/*Membership*/
+}
+#membership p,li{
+  color: White;
+}
+.partner-pic {
+  width: 20%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 2%;
+}
+.partner-pic:hover {
+  width: 21%;
+  height: auto;
+}
+/*Donate*/
+#donate p,li{
+  color: white;
+}
+/*Summer jobs*/
+#jobs p,li{
+  color: white;
+}
+/*Visit Us*/
+.map {
+  display: block;
+  width: 65%;
+  height: auto;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+#directions {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration:none;
+  margin-top: 20px;
+  color:black;
+}
+#directions:hover{
+  color: white;
+  text-decoration: none;
+}
+#bus{
+  display: block;
+  width: 80%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
+#tourb,#voluneerb{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-decoration: none;
+}
+#tourb:hover,#voluneerb:hover{
+  color:white;
+  text-decoration: none;
+}
+/* Footer */
+i.f{
+  color: #999998;
+  margin-right:10px;
+  margin-left: 10px;
+}
+i.f:hover {
+	color: black;
+}
+
+#about, #description, #events, #daycamp, #tour, #birthday, #farmersmarket, #volunteer, #jobs, #membership, #donate, #partners, #visit {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
