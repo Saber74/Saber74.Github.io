@@ -3,7 +3,17 @@
   color: white;
   background-color: black;
 }
-.nav-link{
-  text-decoration: none;
-  color: White;
+@media only screen and (max-width: 850px) {
+  #laptopnav {
+    display: none;
+  }
+}
+@media only screen and (min-width: 851px) {
+  #phonenav {
+    display: none;
+  }
+}
+
+.cen{
+  text-align: center;
 }
