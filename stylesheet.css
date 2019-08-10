@@ -30,3 +30,12 @@
 .cen{
   text-align: center;
 }
+#phonenav button{
+  margin-bottom: 6px;
+}
+.rocket{
+  color: #eff0d1;
+}
+.rocket:hover{
+  color:#77ba99;
+}
