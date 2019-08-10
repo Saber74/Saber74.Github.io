@@ -17,3 +17,16 @@
 .cen{
   text-align: center;
 }
+.nav-link{
+  color: White;
+  text-decoration: none;
+}
+@media only screen and (min-width: 851px) {
+  #phonenav {
+    display: none;
+  }
+}
+
+.cen{
+  text-align: center;
+}
