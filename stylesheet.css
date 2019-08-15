@@ -42,3 +42,8 @@
 .btn-dark:hover{
   color:#77ba99;
 }
+.gitemail ul,li{
+  list-style-type: none;
+  text-align: right;
+  display: inline;
+}
