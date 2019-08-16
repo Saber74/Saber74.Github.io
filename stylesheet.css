@@ -75,16 +75,19 @@
   background-color: #77ba99!important;
 }
 /* ----------------Home Animation */
-@keyframes blinkcolor {
-    30%{
-        color: #df4a48;
-    }
-    70%{
-        color: #284454;
-    }
-    100%{
-        color: #389c15;
-    }
+@keyframes colorswap {
+  0%{
+    color:#7021c4;
+  }
+  35%{
+      color:#97dffc;
+  }
+  60%{
+      color:#8dbc99;
+  }
+  85%{
+      color:#f3c98b;
+  }
 }
 
  @keyframes moveleft {
@@ -128,25 +131,24 @@
     left: 200px;
   }
 }
-.theme-details . {
+.theme-details{
     font-size: 17px;
 }
 .home-ani {
     text-align: center;
     font-size: 25px;
-	  padding-top: 15vh;
+	  padding-top: 30vh;
     background: #031427 url(https://pcbx.us/bfct.png);
-    min-height: 300px;
+    min-height: 600px;
     -webkit-animation: starwind 20s linear infinite;
 }
 .home-ani h1 {
-    color: #df4a48;
     padding: 5px;
 	  text-decoration: none;
     position: relative;
-    animation-name: blinkcolor;
-    animation-duration: 10s;
-    animation-iteration-count: 5;
+    animation-name: colorswap;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
     animation-fill-mode: both;
 }
 /* Home */
