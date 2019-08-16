@@ -142,7 +142,7 @@
     font-size: 25px;
 	  padding-top: 30vh;
     background: #031427 url(https://pcbx.us/bfct.png);
-    min-height: 600px;
+    min-height: 700px;
     -webkit-animation: starwind 20s linear infinite;
 }
 .home-ani h1 {
@@ -168,4 +168,12 @@
   margin: 5px;
   font-size: 1em;
   text-align: center;
+}
+/* About */
+#about h1{
+  text-align: center;
+  padding-top: 10vh;
+  font-size:3em;
+  text-transform: uppercase;
+  color: #ff686b;
 }
