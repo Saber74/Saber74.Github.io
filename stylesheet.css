@@ -41,10 +41,10 @@
 }
 
 .github:hover{
-  color:#3ba99c;
+  color:#8ee3f5;
 }
 .mail:hover{
-  color: #7b8cde;
+  color: #8ee3f5;
 }
 .purple > a.active {
     background-color: #7b8cde!important;
@@ -53,13 +53,10 @@
   background-color: #3ba99c!important;
 }
 .purple> a:hover{
-  background-color: #3ba99c!important;
-}
-.purple> i:hover{
-  color:#3ba99c!important;
+  color: #19d8ff!important;
 }
 .green> a:hover{
-  background-color: #7b8cde!important;
+  color: #19d8ff!important;
 }
 .btn-1:hover{
   background-color: #7b8cde!important;
@@ -72,4 +69,57 @@
 }
 .drop:hover{
   background-color: #77ba99!important;
+}
+/* ----------------Home Animation */
+@keyframes blinkcolor {
+    30%{
+        color: #df4a48;
+    }
+    70%{
+        color: #284454;
+    }
+    100%{
+        color: #389c15;
+    }
+}
+
+ @keyframes moveleft {
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(20px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+@keyframes moveright {
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(-20px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+.theme-details . {
+    font-size: 17px;
+}
+.home-ani {
+    text-align: center;
+    font-size: 25px;
+	padding-top: 35vh;
+}
+.home-ani h1 {
+    color: #df4a48;
+    padding: 5px;
+	  text-decoration: none;
+    position: relative;
+    animation-name: blinkcolor;
+    animation-duration: 10s;
+    animation-iteration-count: 5;
+    animation-fill-mode: both;
 }
