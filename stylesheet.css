@@ -21,6 +21,9 @@
   color: White;
   text-decoration: none;
 }
+.nav-link:hover{
+  color:#2d3047;
+}
 @media only screen and (min-width: 851px) {
   #phonenav {
     display: none;
@@ -39,6 +42,16 @@
 .rocket:hover{
   color:#77ba99;
 }
-.btn-dark:hover{
-  color:#77ba99;
+
+.purple > a.active {
+    background-color: #7b8cde!important;
+}
+.green>a.active{
+  background-color: #3ba99c!important;
+}
+.btn-1:hover{
+  background-color: #7b8cde!important;
+}
+.btn-2:hover{
+  background-color: #3ba99c!important;
 }
