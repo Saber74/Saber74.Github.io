@@ -21,9 +21,6 @@
   color: White;
   text-decoration: none;
 }
-.nav-link:hover{
-  color:#2d3047;
-}
 @media only screen and (min-width: 851px) {
   #phonenav {
     display: none;
@@ -43,15 +40,36 @@
   color:#77ba99;
 }
 
+.github:hover{
+  color:#3ba99c;
+}
+.mail:hover{
+  color: #7b8cde;
+}
 .purple > a.active {
     background-color: #7b8cde!important;
 }
 .green>a.active{
   background-color: #3ba99c!important;
 }
+.purple> a:hover{
+  background-color: #3ba99c!important;
+}
+.purple> i:hover{
+  color:#3ba99c!important;
+}
+.green> a:hover{
+  background-color: #7b8cde!important;
+}
 .btn-1:hover{
   background-color: #7b8cde!important;
 }
 .btn-2:hover{
   background-color: #3ba99c!important;
+}
+.drop{
+  background-color: #eff0d1!important;
+}
+.drop:hover{
+  background-color: #77ba99!important;
 }
