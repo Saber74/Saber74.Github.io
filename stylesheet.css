@@ -39,12 +39,19 @@
 .rocket:hover{
   color:#77ba99;
 }
-
+.github,.mail{
+  color: Black;
+}
 .github:hover{
   color:#8ee3f5;
 }
 .mail:hover{
   color: #8ee3f5;
+}
+.purple,.green{
+  padding-top: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
 }
 .purple > a.active {
     background-color: #7b8cde!important;
@@ -53,10 +60,10 @@
   background-color: #3ba99c!important;
 }
 .purple> a:hover{
-  color: #19d8ff!important;
+  color: Black!important;
 }
 .green> a:hover{
-  color: #19d8ff!important;
+  color: Black!important;
 }
 .btn-1:hover{
   background-color: #7b8cde!important;
@@ -122,4 +129,19 @@
     animation-duration: 10s;
     animation-iteration-count: 5;
     animation-fill-mode: both;
+}
+/* Home */
+.parent {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+.child {
+  margin: 5px;
+  font-size: 1em;
+  text-align: center;
 }
