@@ -88,6 +88,9 @@
   85%{
       color:#f3c98b;
   }
+  100%{
+    color:#7021c4;
+  }
 }
 
  @keyframes moveleft {
