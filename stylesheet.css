@@ -39,14 +39,11 @@
 .rocket:hover{
   color:#77ba99;
 }
-.github,.mail{
+/* .github,.mail{
   color: Black;
-}
-.github:hover{
+} */
+.github:hover,.mail:hover{
   color:#8ee3f5;
-}
-.mail:hover{
-  color: #8ee3f5;
 }
 .purple,.green{
   padding-top: 5px;
@@ -112,13 +109,35 @@
         transform: translate(0px);
     }
 }
+@-webkit-keyframes starwind {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 1985px 1338px, 1000px 1000px, 2000px 1375px;
+  }
+}
+@keyframes move {
+  0% {
+    left: 200px;
+  }
+  70% {
+    left: -200px;
+  }
+  100% {
+    left: 200px;
+  }
+}
 .theme-details . {
     font-size: 17px;
 }
 .home-ani {
     text-align: center;
     font-size: 25px;
-	padding-top: 35vh;
+	  padding-top: 15vh;
+    background: #031427 url(https://pcbx.us/bfct.png);
+    min-height: 300px;
+    -webkit-animation: starwind 20s linear infinite;
 }
 .home-ani h1 {
     color: #df4a48;
