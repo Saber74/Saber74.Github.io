@@ -26,6 +26,9 @@
     display: none;
   }
 }
+#laptopnav{
+  max-height: 100px;
+}
 
 .cen{
   text-align: center;
@@ -173,7 +176,32 @@
 #about h1{
   text-align: center;
   padding-top: 10vh;
-  font-size:3em;
+  font-size:2.5em;
   text-transform: uppercase;
   color: #ff686b;
+}
+#about img{
+  max-width: 550px;
+  height: 500px;
+  max-height: 550px;
+  overflow: hidden;
+  margin-bottom: 75px;
+}
+.row{
+  padding: 0px;
+  margin: 0px;
+}
+
+#whitetext{
+  text-transform: none;
+  color: Black;
+  font-size: 26px;
+  text-align: left;
+}
+#contact{
+  background-color: #ff686b;
+}
+#nopadding{
+  margin: 0px;
+  padding: 0px;
 }
