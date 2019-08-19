@@ -12,6 +12,7 @@
   #phonenav {
     display: none;
   }
+
 }
 
 .cen{
@@ -181,9 +182,7 @@
   color: #ff686b;
 }
 #about img{
-  max-width: 550px;
-  height: 500px;
-  max-height: 550px;
+  max-width: 80%;
   overflow: hidden;
   margin-bottom: 75px;
 }
@@ -192,11 +191,14 @@
   margin: 0px;
 }
 
-#whitetext{
+.blacktext{
   text-transform: none;
   color: Black;
   font-size: 26px;
-  text-align: left;
+  text-align: center;
+}
+.whitetext{
+  color:white;
 }
 #contact{
   background-color: #ff686b;
