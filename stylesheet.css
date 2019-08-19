@@ -49,22 +49,21 @@
 .github:hover,.mail:hover{
   color:#8ee3f5;
 }
+.purple a,.green a{
+  text-decoration: none;
+}
 .purple,.green{
   padding-top: 5px;
   margin-top: 5px;
   margin-right: 5px;
 }
-.purple > a.active {
+.purple:hover {
     background-color: #7b8cde!important;
+    color: White!important;
 }
-.green>a.active{
+.green:hover{
   background-color: #3ba99c!important;
-}
-.purple> a:hover{
-  color: Black!important;
-}
-.green> a:hover{
-  color: Black!important;
+  color: White!important
 }
 .btn-1:hover{
   background-color: #7b8cde!important;
