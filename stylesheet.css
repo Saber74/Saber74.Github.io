@@ -17,6 +17,9 @@ html {
   }
 
 }
+#about,#project,#experience,#contact{
+  padding: 20px;
+}
 
 .cen{
   text-align: center;
@@ -177,7 +180,7 @@ html {
   text-align: center;
 }
 /* About */
-#about h1{
+#about h1,#experience h1,#projects h1{
   text-align: center;
   padding-top: 10vh;
   font-size:2.5em;
@@ -189,6 +192,7 @@ html {
   overflow: hidden;
   margin-bottom: 75px;
 }
+
 /* About Animation */
 @-webkit-keyframes rollIn {
   from {
@@ -245,4 +249,92 @@ html {
 #nopadding{
   margin: 0px;
   padding: 0px;
+}
+/* projects */
+.project-container {
+    width: 100%;
+    max-width: 1387px;
+    margin: 0 auto;
+    margin-top: -10px;
+}
+
+.project-spacer {
+    height: 50%;
+}
+
+.project-text {
+    margin: 2px;
+
+    transform: translateY(-50%);
+}
+
+.project {
+    height: 400px;
+
+    min-width: 300px;
+    width: 100%;
+
+    margin-top: 30px;
+}
+
+/* Larger Screens */
+@media screen and (min-width: 720px) {
+    .project {
+        min-width: 400px;
+    }
+}
+
+.project-frame {
+    overflow: hidden;
+
+    height: 400px;
+    width: 100%;
+
+    text-align: center;
+}
+
+.project-inner {
+    transform: scale(1);
+
+    height: 100%;
+    width: 100%;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.project-tint {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.project-inner:before {
+
+    transition: all .3s;
+
+    background-position: center;
+    background-size: cover;
+
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.project-frame:hover .project-inner:before {
+    transform: scale(1.2);
+}
+
+
+.project-inner p {
+    font: 500 1em/1.5em 'Lato';
+}
+
+#seize_control:before {
+    background-image: url("images/256.png");
 }
