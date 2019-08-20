@@ -1,6 +1,4 @@
-var waypoint = new Waypoint({
-  element: document.getElementById('waypoint'),
-  handler: function(direction) {
-    console.log('Scrolled to waypoint!')
-  }
-})
+$(document).ready(function() {
+$('#header').waypoint(function() {
+    alert('Top of header hit top of viewport.');
+});
