@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 #intro{
   text-align: center;
   color: white;
@@ -51,6 +54,7 @@
 }
 .purple a,.green a{
   text-decoration: none;
+  color:inherit;
 }
 .purple,.green{
   padding-top: 5px;
@@ -185,6 +189,42 @@
   overflow: hidden;
   margin-bottom: 75px;
 }
+/* About Animation */
+@-webkit-keyframes rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.rollIn {
+  -webkit-animation-name: rollIn;
+  animation-name: rollIn;
+}
+
+
 .row{
   padding: 0px;
   margin: 0px;
