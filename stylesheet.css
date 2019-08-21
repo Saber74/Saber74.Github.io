@@ -56,8 +56,9 @@ html {
   color:#8ee3f5;
 }
 .purple a,.green a{
+  font-weight: bold;
   text-decoration: none;
-  color:inherit;
+  color:White;
 }
 .purple,.green{
   padding-top: 5px;
@@ -83,6 +84,15 @@ html {
 }
 .drop:hover{
   background-color: #77ba99!important;
+}
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+projects {
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
 }
 /* ----------------Home Animation */
 @keyframes colorswap {
@@ -251,90 +261,11 @@ html {
   padding: 0px;
 }
 /* projects */
-.project-container {
-    width: 100%;
-    max-width: 1387px;
-    margin: 0 auto;
-    margin-top: -10px;
-}
-
-.project-spacer {
-    height: 50%;
-}
-
-.project-text {
-    margin: 2px;
-
-    transform: translateY(-50%);
-}
-
-.project {
-    height: 400px;
-
-    min-width: 300px;
-    width: 100%;
-
-    margin-top: 30px;
-}
-
-/* Larger Screens */
-@media screen and (min-width: 720px) {
-    .project {
-        min-width: 400px;
-    }
-}
-
-.project-frame {
-    overflow: hidden;
-
-    height: 400px;
-    width: 100%;
-
-    text-align: center;
-}
-
-.project-inner {
-    transform: scale(1);
-
-    height: 100%;
-    width: 100%;
-
-    color: white;
-
-    cursor: pointer;
-}
-
-.project-tint {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-.project-inner:before {
-
-    transition: all .3s;
-
-    background-position: center;
-    background-size: cover;
-
-    z-index: -1;
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.project-frame:hover .project-inner:before {
-    transform: scale(1.2);
-}
-
-
-.project-inner p {
-    font: 500 1em/1.5em 'Lato';
-}
 
 #seize_control:before {
     background-image: url("images/256.png");
+}
+.project-box{
+  width: 100%;
+  max-width: 500px;
 }
