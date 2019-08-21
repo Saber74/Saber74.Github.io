@@ -82,15 +82,6 @@ html {
 .drop:hover{
   background-color: #77ba99!important;
 }
-.padding-0{
-    padding-right:0;
-    padding-left:0;
-}
-projects {
-  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
-  -moz-column-gap: 40px; /* Firefox */
-  column-gap: 40px;
-}
 /* ----------------Home Animation */
 @keyframes colorswap {
   0%{
@@ -253,19 +244,16 @@ projects {
 #contact{
   background-color: #ff686b;
 }
-#nopadding{
-  margin: 0px;
-  padding: 0px;
-}
-/* projects */
 
-#seize_control:before {
-    background-image: url("images/256.png");
-}
 .project-box{
   width: 100%;
   max-width: 500px;
 }
-#experience h2, #projects h2{
+#experience h3, #projects h3{
   font-size: 20px;
+}
+#experience h2,#projects h2{
+  font-weight: bold;
+  color: #F5F5F5;
+
 }

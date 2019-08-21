@@ -127,10 +127,10 @@ body {
 }
 
 .tab .animation .tab-text {
-	padding: 2em;
+	padding: 0.5em;
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 1.25rem;
+	font-size: 2em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	position: absolute;
@@ -143,7 +143,7 @@ body {
 .tab-text h2 {
 	color: #fff;
 	margin: 0;
-	font-size: 1.5rem
+	font-size: 1.75rem;
 }
 
 .tab-text p {
@@ -246,7 +246,7 @@ body {
 }
 
 .animation.experience-animation h2 {
-	padding-top: 20%;
+	padding-top: 10%;
 	transform: scale3d(.8, .8, 1);
 	transition: all .35s;
 	-webkit-transform: scale3d(.8, .8, 1);
