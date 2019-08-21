@@ -394,11 +394,10 @@ body {
 	-webkit-transform: translate3d(100%, 0, 0);
 	-webkit-transition: all .35s
 }
-
 .tab-text:after,
 .tab-text:before {
 	transform: translate3d(0, 0, 0);
-	-webkit-transform: translate3d(0, 0, 0)
+	-webkit-transform: translate3d(0, 0, 0);
 }
 @media (min-width:576px) and (max-width:767px) {
 	.tab .animation .tab-text h2 {
