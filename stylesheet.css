@@ -17,9 +17,6 @@ html {
   }
 
 }
-#about,#project,#experience,#contact{
-  padding: 20px;
-}
 
 .cen{
   text-align: center;
@@ -192,7 +189,7 @@ projects {
 /* About */
 #about h1,#experience h1,#projects h1{
   text-align: center;
-  padding-top: 10vh;
+  padding-top: 6.5vh;
   font-size:2.5em;
   text-transform: uppercase;
   color: #ff686b;
@@ -247,7 +244,7 @@ projects {
 .blacktext{
   text-transform: none;
   color: Black;
-  font-size: 26px;
+  font-size: 22px;
   text-align: center;
 }
 .whitetext{
@@ -268,4 +265,7 @@ projects {
 .project-box{
   width: 100%;
   max-width: 500px;
+}
+#experience h2, #projects h2{
+  font-size: 20px;
 }

@@ -1,0 +1,413 @@
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box
+}
+
+.animationTab-header .caption,
+.animationTab-header .title {
+	font-weight: 700;
+	padding-bottom: 20px;
+	position: relative;
+	display: inline-block;
+	color: #555;
+	margin: 0 0 20px;
+	text-align: center;
+	text-transform: uppercase
+}
+
+.animationTab-header .title {
+	font-size: 36px;
+	font-family: Oswald, sans-serif
+}
+
+.animationTab-header .caption {
+	font-size: 30px;
+	font-family: 'Open Sans', sans-serif
+}
+.column-4{
+	float: left;
+	padding: 15px
+}
+
+.animationTab-header .title::after,
+.animationTab-header .title::before {
+	position: absolute;
+	background: linear-gradient(to right, #ed6ea0 0, #ec8c69 100%);
+	content: ""
+}
+
+.animationTab-header .title::before {
+	left: 0;
+	width: 156%;
+	height: 3px;
+	margin-left: -28%;
+	bottom: -1.5px
+}
+
+.animationTab-header .title::after {
+	left: 50%;
+	width: 25px;
+	height: 25px;
+	bottom: -26px;
+	margin: 0 0 0 -10px;
+	-webkit-clip-path: polygon(75% 0, 75% 69%, 41% 93%, 0 68%, 0 0);
+	clip-path: polygon(75% 0, 75% 69%, 41% 93%, 0 68%, 0 0)
+}
+
+body {
+	background-color: #F5F5F5;
+	background-image: url(http://www.scalsys.com/backgrounds/light-gray-background-texture/light-gray-background-texture_699054.jpg);
+	filter: alpha(opacity=10);
+    background-attachment: fixed;
+}
+.column-4 {
+	width: 33.33333333333333%
+}
+.project-row::after {
+	content: "";
+	display: table;
+	clear: both
+}
+
+.conatiner-exp {
+	max-width: 1140px;
+	margin: 0 auto;
+	position: relative
+}
+
+.header h1 {
+	color: #fff;
+	font-family: Poppins;
+	font-weight: 400;
+	font-size: 2.2rem;
+	padding-left: 40px
+}
+.box-tab {
+	margin: 10px 0
+}
+
+.animation {
+	margin: auto;
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, .07);
+	background-color: #fff;
+	border: 5px solid #f5f5f5
+}
+
+.tab-conatiner-exp {
+	padding: 20px;
+}
+.tab .animation {
+	position: relative;
+	overflow: hidden;
+	max-height: 240px;
+	max-width: 350px;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer
+}
+
+.grid-width3,
+.grid-width6 {
+	max-height: 270px!important;
+	max-width: 530px!important
+}
+
+.grid-width8 {
+	max-width: 700px!important
+}
+
+.tab .animation img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: .8
+}
+
+.tab .animation .tab-text {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%
+}
+
+.tab-text h2 {
+	color: #fff;
+	margin: 0;
+	font-size: 1.5rem
+}
+
+.tab-text p {
+	color: #fff;
+	margin: 0;
+	font-size: 1rem
+}
+
+.hide {
+	display: none
+}
+
+@media (max-width:575px) {
+	.column-xs-12 {
+		float: left;
+		padding: 15px
+  }
+	.column-xs-12 {
+		width: 100%
+	}
+	.hide-xs {
+		display: none
+	}
+	.animationTab-header .title::before {
+		width: 125%;
+		left: 15%
+	}
+	.tab-conatiner-exp {
+		padding-top: 25px;
+		padding-bottom: 25px
+	}
+}
+
+@media (min-width:576px) and (max-width:767px) {
+	.column-sm-6 {
+		width: 50%;
+		float: left;
+		padding: 15px
+  }
+	.hide-sm {
+		display: none
+	}
+	.visible-sm {
+		display: block
+	}
+	.tab-conatiner-exp {
+		padding-top: 25px;
+		padding-bottom: 25px
+	}
+}
+
+@media (max-width:1000px) {
+	.header h1 {
+		padding-left: 70px
+	}
+	.rotate {
+		left: 30px
+	}
+	@media (min-width:768px) and (max-width:991px) {
+		.column-md-6 {
+			width: 50%;
+			float: left;
+			padding: 15px
+		}
+		.hide-md {
+			display: none
+		}
+		.visible-md {
+			display: block
+		}
+	}
+}
+.animation.experience-animation .tab-text:after{
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	content: ""
+}
+.animation.experience-animation {
+	background: linear-gradient(-45deg, #f3cf3f 0, #f33f58 100%)
+}
+
+.animation.project-animation {
+	background: linear-gradient(-180deg, #fff 10%, #000 100%)
+}
+
+.animation.experience-animation img {
+	transition: all .35s;
+	transform: translate3d(0, 0, 0) scale(1);
+	-webkit-transition: all .35s;
+	-webkit-transform: translate3d(0, 0, 0) scale(1)
+}
+
+.animation.experience-animation:hover img {
+	opacity: .6;
+	transform: translate3d(-50px, 0, 0) scale(1.1) rotate(3deg);
+	-webkit-transform: translate3d(-50px, 0, 0) scale(1.1) rotate(3deg)
+}
+
+.animation.experience-animation h2 {
+	padding-top: 20%;
+	transform: scale3d(.8, .8, 1);
+	transition: all .35s;
+	-webkit-transform: scale3d(.8, .8, 1);
+	-webkit-transition: all .35s;
+	font-family: Oswald
+}
+
+.animation.experience-animation .col8-head {
+	padding-top: 9%
+}
+
+.animation.experience-animation:hover h2 {
+	transform: scale3d(1, 1, 1);
+	-webkit-transform: scale3d(1, 1, 1)
+}
+
+.animation.experience-animation p {
+	font-size: .9rem;
+	padding: 10px 5px;
+	transform: scale3d(.8, .8, 1);
+	-webkit-transform: scale3d(.8, .8, 1);
+	opacity: 0;
+	transition: all .35s;
+	-webkit-transition: all .35s;
+	font-family: Poppins
+}
+
+.animation.experience-animation:hover p {
+	transform: scale3d(1, 1, 1);
+	-webkit-transform: scale3d(1, 1, 1);
+	opacity: 1
+}
+
+.animation.experience-animation .tab-text:after {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+	-webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+	opacity: 0;
+	transition: all .35s;
+	-webkit-transition: all .35s
+}
+
+.animation.experience-animation:hover .tab-text:after {
+	transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
+	-webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
+	opacity: 1
+}
+
+.animation.experience-animation .c4 {
+	right: 0;
+	text-align: right;
+	padding-right: 15px
+}
+
+.animation.experience-animation .c3 {
+	bottom: 50%;
+	margin-bottom: -40px;
+	left: 23%
+}
+.animation.project-animation img {
+	transition: all .3s ease-in-out;
+	transform: translate3d(0, 0, 0) scale(1, 1);
+	-webkit-transition: all .3s ease-in-out;
+	-webkit-transform: translate3d(0, 0, 0) scale(1, 1)
+}
+
+.animation.project-animation:hover img {
+	opacity: .6;
+	transform: translate3d(-20px, 0, 0) scale(1.1, 1.1);
+	-webkit-transform: translate3d(-20px, 0, 0) scale(1.1, 1.1)
+}
+
+.animation.project-animation .tab-text h2 {
+	font-family: Oswald;
+	transform: scale3d(.9, .9, 1);
+	transition: all .5s ease-in-out;
+	-webkit-transform: scale3d(.9, .9, 1);
+	-webkit-transition: all .5s ease-in-out;
+	z-index: 2;
+	position: relative;
+	padding-top: 18%
+}
+
+.animation.project-animation:hover h2 {
+	transform: scale3d(1, 1, 1);
+	transition: all .5s ease-in-out;
+	-webkit-transform: scale3d(1, 1, 1);
+	-webkit-transition: all .5s ease-in-out
+}
+
+.animation.project-animation p {
+	font-size: .8rem;
+	padding: 10px 5px;
+	transform: scale3d(.8, .8, 1);
+	-webkit-transform: scale3d(.8, .8, 1);
+	opacity: 0;
+	-webkit-transition: all .35s;
+	transition: all .35s;
+	font-family: Poppins;
+	z-index: 2;
+	position: relative
+}
+
+.animation.project-animation:hover p {
+	transform: scale3d(1, 1, 1);
+	-webkit-transform: scale3d(1, 1, 1);
+	opacity: 1
+}
+
+.animation.project-animation .tab-text:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: calc(100% - 0px);
+	height: inherit;
+	border-top: 10px solid transparent;
+	border-left: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid transparent;
+	transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out
+}
+
+.animation.project-animation:hover .tab-text:after {
+	opacity: 1;
+	top: 0;
+	left: 0;
+	border-top: 135px solid rgba(0, 0, 0, .5);
+	border-left: 135px solid rgba(0, 0, 0, .5);
+	border-bottom: 135px solid rgba(0, 0, 0, .5);
+	border-right: 135px solid rgba(0, 0, 0, .5)
+}
+.tab-text:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-top: 125px solid transparent;
+	border-right: 350px solid rgba(255, 255, 255, .3);
+	border-bottom: 125px solid transparent;
+	transform: translate3d(100%, 0, 0);
+	transition: all .35s;
+	-webkit-transform: translate3d(100%, 0, 0);
+	-webkit-transition: all .35s
+}
+
+.tab-text:after,
+.tab-text:before {
+	transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0)
+}
+@media (min-width:576px) and (max-width:767px) {
+	.tab .animation .tab-text h2 {
+		font-size: 1.3rem!important;
+		font-family: Oswald
+  }
+
+@media (min-width:768px) and (max-width:991px) {
+	.animation h2 {
+		font-size: 1.3rem!important
+	}
+}
