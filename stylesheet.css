@@ -254,6 +254,9 @@ html {
 }
 #experience h2,#projects h2{
   font-weight: bold;
-  color: #F5F5F5;
+  color: #fff9fb;
 
+}
+.img-fluid{
+      filter: brightness(70%);
 }
