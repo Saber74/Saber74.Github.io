@@ -223,6 +223,9 @@ body {
 	width: 100%;
 	content: ""
 }
+.button{
+	outline: none;
+}
 .animation.experience-animation {
 	background: linear-gradient(-45deg, #f3cf3f 0, #f33f58 100%)
 }
