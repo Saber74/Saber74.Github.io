@@ -401,13 +401,13 @@ body {
 	transform: translate3d(0, 0, 0);
 	-webkit-transform: translate3d(0, 0, 0);
 }
-@media (min-width:600px) and (max-width:767px) {
+@media (min-width:576px) and (max-width:767px) {
 	.tab .animation .tab-text h2 {
 		font-size: 1.3rem!important;
 		font-family: Oswald
   }
 
-@media (min-width:800px) and (max-width:991px) {
+@media (min-width:768px) and (max-width:991px) {
 	.animation h2 {
 		font-size: 1.3rem!important
 	}
