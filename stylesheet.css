@@ -260,3 +260,23 @@ html {
 .img-fluid{
       filter: brightness(70%);
 }
+.btn-primary {
+  color:#ff686b;
+  border-color: black;
+  background-color: white;
+}
+.btn-primary:hover {
+  background-color: #ff686b;
+  border-color: black;
+  color: white;
+}
+.btn-primary:active:focus{
+  background-color: #ff686b;
+  border-color: black;
+  color: white;
+}
+.btn-primary:active{
+  background-color: #ff686b!important;
+  border-color: black!important;
+  color: white!important;
+}
