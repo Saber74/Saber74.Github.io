@@ -326,3 +326,13 @@ h5.modal-title{
 .close:hover{
   color:#ff686b!important;
 }
+.btn-light:hover{
+  color:#ff686b!important;
+  display: inline;
+}
+.inl{
+  display: inline-block;
+}
+.modal-body p{
+  font-size: 15px;
+}
