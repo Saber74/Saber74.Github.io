@@ -17,7 +17,6 @@ html {
   }
 
 }
-
 .cen{
   text-align: center;
 }
@@ -81,6 +80,9 @@ html {
 }
 .drop:hover{
   background-color: #77ba99!important;
+}
+h5.modal-title{
+  color: #ff686b;
 }
 /* ----------------Home Animation */
 @keyframes colorswap {
@@ -279,4 +281,7 @@ html {
   background-color: #ff686b!important;
   border-color: black!important;
   color: white!important;
+}
+.close:hover{
+  color:#ff686b!important;
 }
