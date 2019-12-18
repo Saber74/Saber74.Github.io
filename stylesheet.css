@@ -345,3 +345,10 @@ video{
   height: auto;
   width: 100%;
 }
+#about a, #about a:hover{
+  color: black;
+  text-decoration: none;
+}
+#about h5:hover{
+  text-decoration: underline;
+}
