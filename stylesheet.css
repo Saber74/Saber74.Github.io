@@ -44,7 +44,7 @@ html {
   color: #eff0d1;
 }
 .rocket:hover{
-  color:#77ba99;
+  color:#ACD8AA;
 }
 /* .github,.mail{
   color: Black;
@@ -80,11 +80,12 @@ html {
   background-color: #eff0d1!important;
 }
 .drop:hover{
-  background-color: #77ba99!important;
+  background-color: #ACD8AA!important;
 }
 h5.modal-title{
   color: #ff686b;
 }
+
 /* ----------------Home Animation */
 @keyframes colorswap {
   0%{
@@ -184,20 +185,56 @@ h5.modal-title{
     outline: none;
 }
 /* About */
-#about h1,#experience h1,#projects h1{
+#experience h1,#projects h1{
   text-align: center;
   padding-top: 6.5vh;
   font-size:2.5em;
   text-transform: uppercase;
   color: #ff686b;
 }
+#about h1{
+  text-align: center;
+  padding-top: 6.5vh;
+  font-size:1.0em;
+  text-transform: uppercase;
+  color: #000000;
+}
+#about h2{
+  text-align: center;
+  font-size:2.5em;
+  color: #ff686b;
+}
 #about img{
+  padding-top: 15px;
+  padding-bottom: 0px;
+  padding-left: 50px;
   max-width: 80%;
   overflow: hidden;
   margin-bottom: 75px;
   text-align: center;
+  align-self: auto;
+}
+#about h4{
+  text-align: center;
+  color: #ff686b;
+}
+#about h4:hover{
+  text-align: center;
+  color:#ACD8AA;
+}
+#about p{
+  font-size: 1.0em;
+}
+.col{
+   border-left: solid 0.25px #ff686b;
+   border-top: solid 0.25px #ff686b;
+   border-right:  solid 0.25px #ff686b;
+   border-bottom: solid 0.25px #ff686b;
 }
 
+.right{
+  align-items: right;
+}
 /* About Animation */
 @-webkit-keyframes rollIn {
   from {
