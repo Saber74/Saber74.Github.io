@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 #intro{
   text-align: center;
   color: white;
@@ -178,6 +179,9 @@ h5.modal-title{
   margin: 5px;
   font-size: 1em;
   text-align: center;
+}
+*:focus {
+    outline: none;
 }
 /* About */
 #about h1,#experience h1,#projects h1{
