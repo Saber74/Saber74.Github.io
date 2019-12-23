@@ -205,7 +205,7 @@ h5.modal-title{
   color: #ff686b;
 }
 #about img{
-  padding-top: 15px;
+  padding-top: 50px;
   padding-bottom: 0px;
   padding-left: 50px;
   max-width: 80%;
@@ -223,13 +223,9 @@ h5.modal-title{
   color:#ACD8AA;
 }
 #about p{
-  font-size: 1.0em;
-}
-.col{
-   border-left: solid 0.25px #ff686b;
-   border-top: solid 0.25px #ff686b;
-   border-right:  solid 0.25px #ff686b;
-   border-bottom: solid 0.25px #ff686b;
+  padding-top: 45px;
+  font-size: 20px;
+  text-align: left;
 }
 
 .right{

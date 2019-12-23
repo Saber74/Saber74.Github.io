@@ -18,6 +18,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="script.js"> </script>
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="projectexp.css">
 </head>
@@ -27,19 +28,19 @@
   <script src="js/waypoints.debug.js"></script>
   <script src="js/waypoints.js"></script>
   <nav id="laptopnav" class="navbar sticky-top" style="background-color: #ff686b;">
-    <div class="d-md-flex d-block flex-row mx-md-auto mx-0">
+    <div class="flex-column d-md-flex d-block flex-row mx-md-auto mx-0">
       <ul class="nav nav-pills" id="pills-tab" role="tablist">
         <li class="nav-item purple">
           <a class="nav-link" href="#home"><i class="fas fa-igloo"></i> Home</a>
         </li>
         <li class="nav-item green">
-          <a class="nav-link" href="#about"><i class="fas fa-info"></i> About</a>
+          <a class="nav-link" href="#about"><i class="fas fa-user-tie"></i> About</a>
         </li>
         <li class="nav-item purple">
           <a class="nav-link" href="#projects"><i class="fas fa-laptop-code"></i> Projects</a>
         </li>
         <li class="nav-item green">
-          <a class="nav-link" href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+          <a class="nav-link" href="#experience"><i class="fas fa-briefcase"></i> Involvment</a>
         </li>
         <li class="nav-item purple">
           <a class="nav-link" href="#contact"><i class="far fa-address-card"></i> Contact</a>
@@ -62,7 +63,7 @@
           <li>
             <a href="#about">
               <button class="btn btn-1 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-info"></i>
+                <i class="fas fa-user-tie"></i>
                 About
               </button>
             </a>
@@ -79,7 +80,7 @@
             <a href="#experience">
               <button class="btn btn-1 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-briefcase"></i>
-                Experience
+                Involvment
               </button>
             </a>
           </li>
@@ -111,43 +112,41 @@
 <div  class="container" id="about">
   <div class="conatiner-exp-full tab-conatiner-exp animationTab-header">
     <div class="conatiner-exp" align="center">
-      <h1>Nice to meet you!</h1>
       <h2 class="ti title">About me</h2>
       </div>
       <div class="row row-centered">
-      <div class="col-md-6 col-centered">
-        <img class="dipper" src="images/pinguin.jpg" alt="me and Henning's Pinguin"</img>
-      </div>
-
       <div class="col-md-6 col-centered blacktext">
         <p>
-          <br>I am  Nizar, an ambitious tech enthusiast who is currenlty studying Computer Engineering student at the University of Waterloo.<br><br> I can program in Java, Python, and C++ fluently, as well as do web-design (HTML CSS and JavaScript).<br><br>My intrests lie in <strong> Software development
-          </strong> , but I also enjoy tinkering with <strong> Hardware </strong> Outisde of the tech indusrties, I enjoy being a photographer, as well
+          <br>I am  Nizar, an ambitious tech enthusiast who is currently studying Computer Engineering student at the University of Waterloo.<br><br> I can program in Java, Python, and C++ fluently, as well as do web-design (HTML CSS and JavaScript).<br><br>My interests lie in <strong> Software development
+          </strong> , but I also enjoy tinkering with <strong> Hardware </strong>. Outisde of my love for tech, I enjoy being a photographer, as well
           as debating!<br><br>
       </p>
       </div>
+      <div class="col-md-6 col-centered">
+        <img class="dipper" src="images/pinguin.jpg" alt="me and Henning's Pinguin"</img>
+      </div>
       </div>
         <div class="row row-centered flex-row">
-            <div class="col col-md-6 col-centered blacktext">
+            <div class="col col-md-3 col-centered blacktext">
               <a href="#projects">
               <h4 class="display-1 display-1--light"><i class="fas fa-code"></i></h4>
               <h5>Tech Enthusiast.</h5>
             </a>
             </div>
-            <div class="col col-md-6 col-centered blacktext right">
+            <div class="col col-md-3 col-centered blacktext right">
               <a href="" data-toggle="modal" data-target="#MHVP-Modal">
               <h4 class="display-1 display-1--light"><i class="fas fa-camera"></i></h4>
               <h5>Aspiring Photographer.</h5>
             </a>
             </div>
-            <div class="col col-md-6 col-centered blacktext">
+            <div class="col col-md-3 col-centered blacktext">
               <a href="" data-toggle="modal" data-target="#Debate-Modal">
               <h4 class="display-1 display-1--light"><i class="fas fa-comments"></i></h4>
               <h5>Debator.</h5>
               </a>
 
             </div>
-            <div class="col col-md-6 col-centered blacktext right">
+            <div class="col col-md-3 col-centered blacktext right">
               <a href="https://teamcherry.com.au/" target="_blank">
               <h4 class="display-1 display-1--light"><i class="fas fa-gamepad"></i></h4>
               <h5>Video game lover.</h5>
@@ -166,6 +165,7 @@
           <h1 class="ti title">Projects</h1>
         </div>
         <h3 align="center">Hover for a preview<br>Click on a project to learn more</h3>
+
         <div class="column-12 column-xs-12 tab">
           <div class="project-row">
             <div class="column-4 column-sm-6 column-md-6 column-xs-12 box-tab">
@@ -179,7 +179,7 @@
               </div>
             </div>
           </button>
-            <div class="column-4 column-sm-6 column-md-6 column-xs-12  box-tab">
+            <div class="column-4 column-sm-6 column-md-6 column-xs-12  box-tab project">
               <button type="button" data-toggle="modal" data-target="#CSSC-Modal">
               <div class="animation project-animation">
                 <img src="images/sciencecity.png" class="img-fluid" style="object-fit:cover">
@@ -190,7 +190,7 @@
               </div>
             </div>
           </button>
-          <div class="column-4 column-sm-6 column-md-6 column-xs-12  box-tab">
+          <div class="column-4 column-sm-6 column-md-6 column-xs-12  box-tab project">
             <button type="button" data-toggle="modal" data-target="#MHV-Modal">
             <div class="animation project-animation">
               <img src="images/plant.png" class="img-fluid" style="object-fit:cover">
@@ -203,7 +203,7 @@
         </button>
           </div>
           <div class="project-row">
-            <div class="column-4 column-sm-6 column-md-6 column-xs-12  box-tab">
+            <div class="column-4 column-sm-6 column-md-6 column-xs-12  box-tab project">
               <button type="button" data-toggle="modal" data-target="#Game-Modal">
               <div class="animation project-animation">
                 <img src="images/spaceinvaders.png" class="img-fluid" style="object-fit:cover">
@@ -214,7 +214,7 @@
               </div>
             </div>
           </button>
-          <div class="column-4 column-sm-6 column-md-6 column-xs-12  box-tab">
+          <div id="Python"class="column-4 column-sm-6 column-md-6 column-xs-12  box-tab project">
             <button type="button" data-toggle="modal" data-target="#Pokemon-Modal">
             <div class="animation project-animation">
               <img src="images/pokemon.png" class="img-fluid" style="object-fit:cover">
@@ -225,7 +225,7 @@
             </div>
           </div>
         </button>
-        <div class="column-4 column-sm-6 column-md-6 column-xs-12  box-tab">
+        <div id="Java" class="column-4 column-sm-6 column-md-6 column-xs-12  box-tab project">
           <button type="button" data-toggle="modal" data-target="#Seize-Modal">
           <div class="animation project-animation">
             <img src="images/512.png" class="img-fluid" style="object-fit:cover">
@@ -238,7 +238,7 @@
       </button>
     </div>
         <div class="project-row">
-          <div class="column-4 column-sm-6 column-md-6 column-xs-12  box-tab">
+          <div id="Other" class="column-4 column-sm-6 column-md-6 column-xs-12  box-tab">
             <button type="button" data-toggle="modal" data-target="#Panium-Modal">
             <div class="animation project-animation">
               <img src="images/panium.png" class="img-fluid" style="object-fit:cover">
@@ -282,7 +282,7 @@
     <div class="conatiner-exp tab-item">
       <div class="project-row">
         <div class="conatiner-exp" align="center">
-          <h1 class="ti title">Experience</h1>
+          <h1 class="ti title">Involvment</h1>
           <h3>Hover for a preview<br>Click on a project to learn more</h3>
         </div>
         <div class="column-12 column-xs-12 tab">
@@ -380,9 +380,9 @@
    </div>
       <div class="modal-body">
         <p>
-        Over the summer, I worked as a camp counslour at CSSC. To my amazement, the organization was still using a website built back in the early 2000s.
-        Upon that realization, I took the initiative to learn web-design then rebuild the website from scratch for the organization using HTML, CSS , JavaScript and Bootstrap
-        providing more relevant and up to date information to visitors.
+          Over the summer, I worked as a camp counselor at CSSC. To my amazement, the organization was still using a website built back in the early 2000s.
+          Upon that realization, I took the initiative to learn web-design then rebuild the website from scratch for the organization using HTML, CSS, JavaScript, and Bootstrap
+          providing more relevant and up to date information to visitors.
         <br>
       </p>
       <div class="parent">
@@ -414,13 +414,12 @@
    </div>
       <div class="modal-body">
         <p>
-        Mini-Games Android Mania is a series of multiplayer Mini-games built in Java using Libgdx for the graphics.
-        The Computer/Laptop, acts as the centre of the action, allowing the users to pick a game to play, and see what is happening.
-        The users, can either play the game using keyboard controls, or use their phones as a controller.
-        To utilize your phone as a controller, you will need to install the supplemantry androidmania app that we developed using android studio
-        for Android phones (Version 5.0+). The app contains unique controlls for each of the 6 bundled games. Android Mania game use a Server/Client system, where the computer, as well as the phones are all clients that
-        transfer information between each other using a Digital Ocean Server (unfortunately now offline).
-        The games we created include: A unique version of space invaders, Frogger, A rope race game, A memory puzzle block match, a word search game, and a bomb defusing game.
+          Mini-Games Android Mania is a series of multiplayer Mini-games built in Java using Libgdx for the graphics.
+The Computer/Laptop, acts as the center of the action, allowing the users to pick a game to play, and see what is happening.
+The users, can either play the game using keyboard controls or use their phones as a controller.
+To utilize your phone as a controller, you will need to install the supplementary android mania app that we developed using android studio for Android phones (Version 5.0+). The app contains unique controls for each of the 6 bundled games. Android Mania game use a Server/Client system, where the computer, as well as the phones, are all clients that
+transfer information between each other using a Digital Ocean Server (unfortunately now offline).
+The games we created include A unique version of space invaders, Frogger, A rope race game, A memory puzzle block match, a word search game, and a bomb-defusing game.
       </p>
       <div class="parent">
         <a class="btn-link inl nav-link" href="https://github.com/Saber74/Mini-games-Bluetooth-Mania" target="_blank">
@@ -448,9 +447,9 @@
    </div>
       <div class="modal-body">
         <p>
-        A project I developed along my friend at MasseyHacks.
-        Ripple is a game that provides a story-driven narrative set in a post-apocalyptic world where water was once taken for granted and polluted. Our game aims to raise awareness of the value of water and portrays through an interactive game where users can experience daily life activities without clean water.
-        The game was developed in Python, using Pygame for the graphics. All illustrations were hand drawn in Photoshop (By my friend Lydia Tan).
+          A project I developed along with my friend at MasseyHacks.
+          Ripple is a game that provides a story-driven narrative set in a post-apocalyptic world where water was once taken for granted and polluted. Our game aims to raise awareness of the value of water and portrays through an interactive game where users can experience daily life activities without clean water.
+          The game was developed in Python, using Pygame for the graphics. All illustrations were hand-drawn in Photoshop (By my friend Lydia Tan).
       </p>
       <div class="parent">
         <a class="btn-link inl nav-link" href="https://github.com/Saber74/MHV" target="_blank">
@@ -482,8 +481,8 @@ Your browser does not support the video tag.
    </div>
       <div class="modal-body">
         <p>
-        As a part of learning how to use JAVA and Libgdx, I created Space Settlers. It is a game that resembles Space Invaders, however there are various power ups to help the user along the way!
-        Space Settlers uses Object Oriented Design to create an enjoyable (and hard) game.
+          As a part of learning how to use JAVA and Libgdx, I created Space Settlers. It is a game that resembles Space Invaders, however, there are various power-ups to help the user along the way!
+          Space Settlers uses Object-Oriented Design to create an enjoyable (and hard) game.
       </p>
       <div class="parent">
         <a class="btn-link inl nav-link" href="https://github.com/Saber74/SimpleGame" target="_blank">
@@ -511,10 +510,9 @@ Your browser does not support the video tag.
    </div>
       <div class="modal-body">
         <p>
-        Pokemon Arena is a command line text based JAVA game. By etnering commands, the user is able to control and command his Pokemon, in his journey to become the pokemon master.
-        Pick between 28 different Pokemon of different types, each with their own unique attacks and special effects. Seeing as the game is fully based on command line text, I decided that it would not
-        be fun without having colored text! So I Colored all the console output in an effort to make the game look as good as it is enjoyable.
-        Pokemon Arena used a lot of Object Oriented Design elements, and was a very fun project to create!
+          Pokemon Arena is a command-line text-based JAVA game. By entering commands, the user can control and command his Pokemon, in his journey to become the pokemon master.
+          Pick between 28 different Pokemon of different types, each with their unique attacks and special effects. Seeing as the game is fully based on command line text, I decided that it would not be fun without having colored text! So I Colored all the console output to make the game look as good as it is enjoyable.
+          Pokemon Arena used a lot of Object-Oriented Design elements, and was a very fun project to create!
       </p>
       <div class="parent">
         <a class="btn-link inl nav-link" href="https://github.com/Saber74/PokemonArena" target="_blank">
@@ -542,9 +540,9 @@ Your browser does not support the video tag.
    </div>
       <div class="modal-body">
         <p>
-        As a part of Hack The North, my team and I decided to build something that could benifit people around the world.
-        SeizeControl is a Chrome extension that filters frames of YouTube videos that have a high probability of causing a negative reaction for individuals with epilepsy. When a new video is visited, its ID is sent to Firebase Cloud Firestore to be relayed to a beefy Google Compute server. The video is then downloaded and screened by a Python script and openCV. Once each portion is given a score, the results are sent back to Cloud Firestore for future reference and for the client to process. The YouTube video is then played while SeizeControl monitors the timestamp in the background. If a portion exceeds a user set threshold, the section is skipped
-        Although the implementation of the screening algorithm was hugely inefficient (only designed for a single threaded CPU when we had an 8 core Xeon and an Nvidia Tesla GPU), the product in the end did work and was able to filter a Taylor Swift music video.
+          As a part of Hack The North, my team and I decided to build something that could benefit people around the world.
+          SeizeControl is a Chrome extension that filters frames of YouTube videos that have a high probability of causing a negative reaction for individuals with epilepsy. When a new video is visited, its ID is sent to Firebase Cloud Firestore to be relayed to a beefy Google Compute server. The video is then downloaded and screened by a Python script and OpenCV. Once each portion is given a score, the results are sent back to Cloud Firestore for future reference and for the client to process. The YouTube video is then played while SeizeControl monitors the timestamp in the background. If a portion exceeds a user-set threshold, the section is skipped
+          Although the implementation of the screening algorithm was hugely inefficient (only designed for a single-threaded CPU when we had an 8 core Xeon and an Nvidia Tesla GPU), the product, in the end, did work and was able to filter a Taylor Swift music video.
       </p>
       <div class="parent">
         <a class="btn-link inl nav-link" href="https://github.com/Saber74/SeizeControl" target="_blank">
@@ -572,11 +570,9 @@ Your browser does not support the video tag.
    </div>
       <div class="modal-body">
         <p>
-        Panium RPG was the final project for my ICS3U class. Using the programming language Python, and through utilizing Object Oriented
-        Programming, me and my partner were able to develop a fully fledged RPG. Journey as the prince, or princess (and switch any time in between)
-        and battle against the dark lord and his minions who overtook the kingdom. The game includes quests, easter games, NPCs that talk, as well as hidden
-        treasures and treasure chests. Battle over 30 enemies, using many combinations of magical and physical attacks. Your progress can be saved at any given point
-        so don't be afraid to leave and come back!! All the maps were custommly created using Tiled.
+          Panium RPG was the final project for my ICS3U class. Using the programming language Python, and through utilizing Object Oriented
+          Programming, me and my partner were able to develop a fully-fledged RPG. Journey as the prince, or princess (and switch any time in between)
+          and battle against the dark lord and his minions who overtook the kingdom. The game includes quests, easter games, NPCs that talk, as well as hidden treasures and treasure chests. Battle over 30 enemies, using many combinations of magical and physical attacks. Your progress can be saved at any given point so don't be afraid to leave and come back!! All the maps were custom created using Tiled.
       </p>
       <div class="parent">
         <a class="btn-link inl nav-link" href="https://github.com/Saber74/Panium-RPG" target="_blank">
@@ -604,10 +600,9 @@ Your browser does not support the video tag.
    </div>
       <div class="modal-body">
         <p>
-        Bored is a Python based app that was created by utilizing Pygame. Bored as the name implies, finds you activites, locations nearby for you to have fun!
-        Simply input, what type of location you want (food/amusement etc..), and your current location, as percise as you want it to be. Using Geocoder, and google maps API, Bored
-        will find the closest compatible place for you to visit. We used Json file manipluation to filter for the best possible results, disclusiding areas with many negative reviews.
-        Bored was developed at Massey Hacks IV.
+          Bored is a Python-based app that was created by utilizing Pygame. Bored as the name implies, finds you activities, locations nearby for you to have fun!
+          Simply input, what type of location you want (food/amusement etc..), and your current location, as precise as you want it to be. Using Geocoder, and google maps API, Bored will find the closest compatible place for you to visit. We used JSON file manipulation to filter for the best possible results, filtering out areas with many negative reviews.
+          Bored was developed at Massey Hacks IV.
       </p>
       <div class="parent">
         <a class="btn-link inl nav-link" href="https://github.com/Saber74/Massey-Hacks-BORED" target="_blank">
@@ -635,9 +630,9 @@ Your browser does not support the video tag.
    </div>
       <div class="modal-body">
         <p>
-        A Tower of God themed paint program, that allows the user to import and save pictures, and edit them as they wish to.
-        Enjoy a various selection of tools, stickers, as well as music as you go about editing your pictures.
-        The paint project was my very first CS project, (which while it looks horrible), it does function quite well, and was impressive for a start.
+          A Tower of God themed paint program, that allows the user to import and save pictures, and edit them as they wish to.
+          Enjoy a variety of tools, stickers, as well as music as you go about editing your pictures.
+          The painting project was my very first CS project, (which while it looks horrible), it does function quite well, and was impressive for a start.
       </p>
       <div class="parent">
         <a class="btn-link inl nav-link" href="https://github.com/Saber74/paint" target="_blank">
@@ -665,8 +660,8 @@ Your browser does not support the video tag.
    </div>
       <div class="modal-body">
         <p>
-        Having a great passion for CS, my friends and I came up with the idea of starting a club to teach elementary school students computer science, to share our love for it. It was not very easy going around, creating a new type of club in the school. We had to convince our teachers (who were very helpful), as well as market the club to the target audience by visiting the elementary schools in our area. With a lot of effort, and through the collabration of the team CodeReach launched in fall 2017
-During its first year of operation, we received over 100 applications from across the Windsor-Essex County and gained the attention of the local media. We developed a multi-stream curriculum to be taught once per week over the course of ~8 months which covered the fundamentals of Python and game development. Many of the amazing students who participated in CodeReach moved on to participate in high school programming competitions and hackathons while still in elementary school. The club is still going on strong today, even without our involvment ( as we grdauted highschool), however it is very satisfying, knowing I was once a part of something great, and wish the next generations carry over our love and compassion for CS.
+          Having a great passion for CS, my friends and I came up with the idea of starting a club to teach elementary school students computer science, to share our love for it. It was not very easy going around, creating a new type of club in the school. We had to convince our teachers (who were very helpful), as well as market the club to the target audience by visiting the elementary schools in our area. With a lot of effort, and through the collaboration of the team CodeReach launched in fall 2017
+  During its first year of operation, we received over 100 applications from across Windsor-Essex County and gained the attention of the local media. We developed a multi-stream curriculum to be taught once per week throughout ~8 months which covered the fundamentals of Python and game development. Many of the amazing students who participated in CodeReach moved on to participate in high school programming competitions and hackathons while still in elementary school. The club is still going on strong today, even without our involvement ( as we graduated high school), however, it is very satisfying, knowing I was once a part of something great, and wish the next generations carry over our love and compassion for CS.
 </p>
 
 <div class="parent">
@@ -698,12 +693,12 @@ During its first year of operation, we received over 100 applications from acros
    </div>
       <div class="modal-body">
         <p>
-        In my final year of highschool, I joined the Robotics team, as a part of the Pnuematics and Electrical team.
-        It was very fun and enjoyable working in a team environemnt, and building the robot that will ultimatley represent us and our hard work.
-        In 2019, due to everyone's hard work and dedication, we were able to reach the Detroit World Finals.
-        Additionally, the Robotics team , did various additionall activies for the neighbourhood one of which was STEM Day.
-        At STEM day, elementary school students show up for an entire day of fun STEM activities completly free of charge. I was specifically in charge of the Hour of Code challenge
-        which was one of the parts the kids really enjoyed!
+          In my final year of high school, I joined the Robotics team, as a part of the Pneumatics and Electrical team.
+          It was very fun and enjoyable working in a team environment and building a robot that will ultimately represent us and our hard work.
+          In 2019, due to everyone's hard work and dedication, we were able to reach the Detroit World Finals.
+          Additionally, the Robotics team did various additional activities for the neighborhood one of which was STEM Day.
+          At STEM day, elementary school students show up for an entire day of fun STEM activities completely free of charge. I was specifically in charge of the Hour of Code challenge
+          which was one of the parts the kids enjoyed!
       </p>
       </div>
       <div class="modal-footer">
@@ -726,9 +721,9 @@ During its first year of operation, we received over 100 applications from acros
      <h5 class="modal-title">April 2019 | Lead Photographer</h5>
    </div>
       <div class="modal-body">
-        <p> In VMSS we hold MasseyHacks Canada's larget highschool hackathon anullay. At MasseyHacks V, I had the chace to participate as a hacker,
-          as well as the lead photographer for the event. AT the end of the event. I handpicked a 100 pictures, that were printed out and left at the gym in the closing cermonies for the participants to pick from.
-          (I also really need a better camera....)</p>
+        <p> In VMSS we hold MasseyHacks Canada's largest high school hackathon annually. At MasseyHacks V, I had the chance to participate as a hacker,
+  as well as the lead photographer for the event. AT the end of the event. I handpicked 100 pictures, that were printed out and left at the gym in the closing ceremonies for the participants to pick from.
+  (I also really need a better camera....)</p>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -817,10 +812,10 @@ During its first year of operation, we received over 100 applications from acros
    </div>
       <div class="modal-body">
         <p>
-        All Nigh Social is a fundriser event for my highschool, where over 600 students attend to enjoy various sports, dances as well as board and video games throughout the night.
-        ALl the money proceedings go towards a Children Christmas Party that we also hold at our school, for the unprivleged kids in Windsor.
-        As an ANS Registraion Executive, I was responsible for advertisment, selling tickets and keeping track of money and depositing it, as well as keeping track of everyone who is inside or outside the building at any given point.
-        With such a large student body, this task was quite tough, and took a lot of energy, but at the end of the day seeing the children's smile at CCP is the greatest joy anyone can ask for.
+          All Night Social is a fundraiser event for my high school, where over 600 students attend to enjoy various sports, dances as well as board and video games throughout the night.
+          All the money proceedings go towards a Children Christmas Party that we also hold at our school, for the unprivileged kids in Windsor.
+          As an ANS Registration Executive, I was responsible for advertisement, selling tickets and keeping track of money and depositing it, as well as keeping track of everyone who is inside or outside the building at any given point.
+          With such a large student body, this task was quite tough and took a lot of energy, but at the end of the day seeing the children's smile at CCP is the greatest joy anyone can ask for.
       </p>
       <br><img class="d-block w-100" src="images/ANS_1.JPG">
       </div>
@@ -844,10 +839,10 @@ During its first year of operation, we received over 100 applications from acros
    </div>
       <div class="modal-body">
         <p>
-        I joined Debate club as a member back in 2017, and it pushed me to be who I am today, giving me the courage to speak out.
-        In my final year of highschool I decided it was time to give back, and thus took a part in the executive team, as the Vice-President of the Club.
-        Being a part of debate was a fun experience, especially competing at Odette, and organizing events such as Massey Debate Invittational and judging it for three years.
-        However as time passed on, more and more people joined Debate. So by my final year, as an executive I prepared weekly meetings for well over 60 students at a time.
+          I joined Debate club as a member back in 2017, and it pushed me to be who I am today, giving me the courage to speak out.
+          In my final year of high school, I decided it was time to give back and thus took a part in the executive team, as the Vice-President of the Club.
+          Being a part of debate was a fun experience, especially competing at Odette, and organizing events such as Massey Debate Invitational and judging it for three years.
+          However as time passed on, more and more people joined Debate. So by my final year, as an executive, I prepared weekly meetings for well over 60 students at a time.
       </p>
       <h1 class="oddete"> Massey Crushing it at Odette</h1>
       <br><img class="d-block w-100" src="images/odette.jpg">
@@ -865,26 +860,8 @@ During its first year of operation, we received over 100 applications from acros
     <a class="nav-link mail child" href="mailto:nizar.rifai7401@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
     <a class="nav-link mail child" href="https://www.linkedin.com/in/nizar-alrifai-aa467b191/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
   </div>
-  <p style="margin:0px; font-size:14px">Copyright © Nizar Alrifai</p>
+  <p style="margin:0px; font-size:14px">Nizar Alrifai © 2020</p>
 </div>
-</div>
-<div id="myModal" class="modal fade animated jackInTheBox" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Header</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
 </div>
 </body>
 </html>
