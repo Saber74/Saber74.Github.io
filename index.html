@@ -540,10 +540,7 @@ Your browser does not support the video tag.
    </div>
       <div class="modal-body">
         <p>
-          As a part of Hack The North, my team and I decided to build something that could benefit people around the world.
-          SeizeControl is a Chrome extension that filters frames of YouTube videos that have a high probability of causing a negative reaction for individuals with epilepsy. When a new video is visited, its ID is sent to Firebase Cloud Firestore to be relayed to a beefy Google Compute server. The video is then downloaded and screened by a Python script and OpenCV. Once each portion is given a score, the results are sent back to Cloud Firestore for future reference and for the client to process. The YouTube video is then played while SeizeControl monitors the timestamp in the background. If a portion exceeds a user-set threshold, the section is skipped
-          Although the implementation of the screening algorithm was hugely inefficient (only designed for a single-threaded CPU when we had an 8 core Xeon and an Nvidia Tesla GPU), the product, in the end, did work and was able to filter a Taylor Swift music video.
-      </p>
+        temp
       <div class="parent">
         <a class="btn-link inl nav-link" href="https://github.com/Saber74/SeizeControl" target="_blank">
         <button  type="button" class="btn btn-light child"><i class="fab fa-github"></i> Github</button>
