@@ -579,6 +579,14 @@ body {
 	margin-bottom: -40px;
 	left: 23%
 }
+.animation.experience-animation .tab-text:after{
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	content: ""
+}
 .animation.project-animation img {
 	transition: all .3s ease-in-out;
 	transform: translate3d(0, 0, 0) scale(1, 1);
