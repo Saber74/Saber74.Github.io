@@ -165,24 +165,37 @@ html,body {
 	font-size: 30px;
 	font-family: 'Open Sans', sans-serif
 }
+
 .column-1 {
+  float: left;
 	width: 8.333333333333333%
+  padding: 15px
+
 }
 
 .column-2 {
+  float: left;
 	width: 16.66666666666667%
+  padding: 15px
+
 }
 
 .column-3 {
+  float: left;
 	width: 25%
+  padding: 15px
+
 }
 
-.column-4 {
-	width: 33.33333333333333%
+.column-4{
+	float: left;
+	padding: 15px
 }
 
 .column-5 {
+  float: left;
 	width: 41.66666666666667%
+  padding: 15px
 }
 
 .column-6 {
@@ -192,28 +205,40 @@ html,body {
 }
 
 .column-7 {
+  float: left;
 	width: 58.33333333333333%
+  padding: 15px
 }
 
 .column-8 {
+  float: left;
 	width: 66.66666666666667%
+  padding: 15px
 }
 
 .column-9 {
+  float: left;
 	width: 75%
+  padding: 15px
 }
 
 .column-10 {
+  float: left;
 	width: 83.33333333333333%
+  padding: 15px
 }
 
 .column-11 {
+  float: left;
 	width: 91.66666666666667%
+  padding: 15px
 }
 
 .column-12,
 .wrapper-full {
+  float: left;
 	width: 100%
+  padding: 15px
 }
 
 
