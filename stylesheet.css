@@ -25,11 +25,7 @@ html {
   color: White;
   text-decoration: none;
 }
-@media only screen and (min-width: 851px) {
-  #phonenav {
-    display: none;
-  }
-}
+
 #laptopnav{
   max-height: 100px;
 }
@@ -49,6 +45,7 @@ html {
 /* .github,.mail{
   color: Black;
 } */
+
 .github:hover,.mail:hover{
   color:#8ee3f5;
 }

@@ -1,3 +1,4 @@
+
 * {
   box-sizing:border-box;
 }
@@ -9,54 +10,7 @@ html,body {
   }
 }
 
-#modal-container {
-  position:fixed;
-  display:table;
-  height:100%;
-  width:100%;
-  top:0;
-  left:0;
-  transform:scale(0);
-  z-index:1;
-  &.six {
-    transform:scale(1);
-    .modal-background {
-      background:rgba(0,0,0,.0);
-      animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-      .modal {
-        background-color:transparent;
-        animation: modalFadeIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-        h2,p {
-          opacity:0;
-          position:relative;
-          animation: modalContentFadeIn .5s 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-        }
-        .modal-svg {
-          rect {
-            animation: sketchIn .5s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-          }
-        }
-      }
-    }
-    &.out {
-      animation: quickScaleDown 0s .5s linear forwards;
-      .modal-background {
-        animation: fadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-        .modal {
-          animation: modalFadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-          h2,p {
-            animation: modalContentFadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-          }
-          .modal-svg {
-            rect {
-              animation: sketchOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+
 @keyframes fadeIn {
   0% {
     background:rgba(0,0,0,.0);
@@ -165,82 +119,10 @@ html,body {
 	font-size: 30px;
 	font-family: 'Open Sans', sans-serif
 }
-
-.column-1 {
-  float: left;
-	width: 8.333333333333333%
-  padding: 15px
-
-}
-
-.column-2 {
-  float: left;
-	width: 16.66666666666667%
-  padding: 15px
-
-}
-
-.column-3 {
-  float: left;
-	width: 25%
-  padding: 15px
-
-}
-
 .column-4{
 	float: left;
 	padding: 15px
 }
-
-.column-5 {
-  float: left;
-	width: 41.66666666666667%
-  padding: 15px
-}
-
-.column-6 {
-	width: 50%;
-	float: left;
-	padding: 15px
-}
-
-.column-7 {
-  float: left;
-	width: 58.33333333333333%
-  padding: 15px
-}
-
-.column-8 {
-  float: left;
-	width: 66.66666666666667%
-  padding: 15px
-}
-
-.column-9 {
-  float: left;
-	width: 75%
-  padding: 15px
-}
-
-.column-10 {
-  float: left;
-	width: 83.33333333333333%
-  padding: 15px
-}
-
-.column-11 {
-  float: left;
-	width: 91.66666666666667%
-  padding: 15px
-}
-
-.column-12,
-.wrapper-full {
-  float: left;
-	width: 100%
-  padding: 15px
-}
-
 
 .animationTab-header .title::after,
 .animationTab-header .title::before {
