@@ -10,7 +10,7 @@
 
   <title>Nizar Alrifai</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="animate.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
   <!-- Bootstrap Links -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -41,7 +41,7 @@
           <a class="nav-link" href="#contact"><i class="far fa-address-card"></i> Contact</a>
         </li>
         <li class="nav-item green">
-          <a class="nav-link" target="_blank" href="resume.pdf"><i class="far fa-file"></i> Resume</a>
+          <a class="nav-link" target="_blank" href="assets/resume.pdf"><i class="far fa-file"></i> Resume</a>
         </li>
       </ul>
     </div>
@@ -91,7 +91,7 @@
             </a>
           </li>
           <li>
-            <a href="resume.pdf" target="_blank">
+            <a href="assets/resume.pdf" target="_blank">
               <button class="btn btn-1 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="far fa-file"></i>
                 Resume
@@ -177,6 +177,28 @@
                 <div class="column-12 column-xs-12 tab">
           <div class="project-row">
             <div class="column-4 column-sm-6 column-md-6 column-xs-12 box-tab">
+              <button type="button" data-toggle="modal" data-target="#PSN-Modal">
+                <div class="animation project-animation">
+                  <img src="images/ps4.png" class="img-fluid" style="object-fit:cover">
+                  <div class="tab-text">
+                    <h2>Sony Playstation</h2>
+                    <p>4 month Software Developer internship</p>
+                  </div>
+                </div>
+              </div>
+            </button>
+            <div class="column-4 column-sm-6 column-md-6 column-xs-12 box-tab">
+              <button type="button" data-toggle="modal" data-target="#Map-Modal">
+                <div class="animation project-animation">
+                  <img src="images/busymap.jpg" class="img-fluid" style="object-fit:cover">
+                  <div class="tab-text">
+                    <h2>BusyMaps</h2>
+                    <p>Real-time platform to visually represent the busyness of areas</p>
+                  </div>
+                </div>
+              </div>
+            </button>
+            <div class="column-4 column-sm-6 column-md-6 column-xs-12 box-tab">
               <button type="button" data-toggle="modal" data-target="#Mania-Modal">
                 <div class="animation project-animation">
                   <img src="images/androidmania (2).jpg" class="img-fluid" style="object-fit:cover">
@@ -187,6 +209,8 @@
                 </div>
               </div>
             </button>
+          </div>
+          <div class="project-row">
             <div class="column-4 column-sm-6 column-md-6 column-xs-12  box-tab project">
               <button type="button" data-toggle="modal" data-target="#CSSC-Modal">
                 <div class="animation project-animation">
@@ -209,8 +233,6 @@
                 </div>
               </div>
             </button>
-          </div>
-          <div class="project-row">
             <div class="column-4 column-sm-6 column-md-6 column-xs-12  box-tab project">
               <button type="button" data-toggle="modal" data-target="#Game-Modal">
                 <div class="animation project-animation">
@@ -222,6 +244,19 @@
                 </div>
               </div>
             </button>
+          </div>
+          <div class="project-row">
+            <div class="column-4 column-xs-12 column-sm-6 column-md-6 box-tab">
+              <button type="button" data-toggle="modal" data-target="#CR-Modal">
+                <div class="animation project-animation">
+                  <img src="images/codereach.jpg" class="img-fluid" id="darker">
+                  <div class="tab-text">
+                    <h2>CodeReach</h2>
+                    <p>Co-founder and Instructor</p>
+                  </div>
+                </div>
+              </button>
+            </div>
             <div id="Python"class="column-4 column-sm-6 column-md-6 column-xs-12  box-tab project">
               <button type="button" data-toggle="modal" data-target="#Pokemon-Modal">
                 <div class="animation project-animation">
@@ -307,17 +342,6 @@
               </button>
             </div>
             <div class="column-4 column-xs-12 column-sm-6 column-md-6 box-tab">
-              <button type="button" data-toggle="modal" data-target="#CR-Modal">
-                <div class="animation experience-animation">
-                  <img src="images/codereach.jpg" class="img-fluid" id="darker">
-                  <div class="tab-text">
-                    <h2>CodeReach</h2>
-                    <p>Co-founder and Instructor</p>
-                  </div>
-                </div>
-              </button>
-            </div>
-            <div class="column-4 column-xs-12 column-sm-6 column-md-6 box-tab">
               <button type="button" data-toggle="modal" data-target="#FRC-Modal">
                 <div class="animation experience-animation">
                   <img src="images/4903-team.jpg" class="img-fluid" id="darker" >
@@ -328,12 +352,6 @@
                 </div>
               </button>
             </div>
-            </div>
-          </div>
-      </div>
-      <div class="project-row">
-        <div class="column-12 column-xs-12 tab">
-          <div class="project-row">
             <div class="column-4 column-xs-12 column-sm-6 column-md-6 box-tab">
               <button type="button" data-toggle="modal" data-target="#ANS-Modal">
                 <div class="animation experience-animation">
@@ -345,6 +363,10 @@
                 </div>
               </button>
             </div>
+          </div>
+        </div>
+        <div class="column-12 column-xs-12 tab">
+          <div class="project-row">
             <div class="column-4 column-xs-12 column-sm-6 column-md-6 box-tab">
               <button type="button" data-toggle="modal" data-target="#Debate-Modal">
                 <div class="animation experience-animation">
@@ -367,10 +389,6 @@
                 </div>
               </div>
             </button>
-          </div>
-        </div>
-        <div class="project-row">
-          <div class="column-12 column-xs-12 tab">
             <div class="column-4 column-xs-12 column-sm-6 column-md-6 box-tab">
               <button type="button">
                 <div class="animation experience-animation">
@@ -383,7 +401,6 @@
               </button>
             </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
@@ -449,6 +466,34 @@
             <button  type="button" class="btn btn-light child"><i class="fab fa-github"></i> Github</button>
           </a>
         </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade animated jackInTheBox" id="Map-Modal" tabindex="-1" role="dialog" aria-labelledby="Map-Modal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-block">
+        <div class="d-flex">
+          <h3 class="modal-title" id="exampleModalLabel">BusyMap</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <h5 class="modal-title">August 2020</h5>
+      </div>
+      <div class="modal-body">
+        <p>
+          coming soon
+        </p>
+        <!-- <div class="parent"> -->
+          <!-- <a class="btn-link inl nav-link" href="https://github.com/Saber74/Mini-games-Android-Mania" target="_blank">
+            <button  type="button" class="btn btn-light child"><i class="fab fa-github"></i> Github</button>
+          </a> -->
+        <!-- </div> -->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -570,6 +615,34 @@
                 <button  type="button" class="btn btn-light child"><i class="fab fa-github"></i> Github</button>
               </a>
             </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade animated jackInTheBox" id="PSN-Modal" tabindex="-1" role="dialog" aria-labelledby="PSN-Modal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-block">
+            <div class="d-flex">
+              <h3 class="modal-title" id="exampleModalLabel">Panium RPG</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <h5 class="modal-title">May-August 2020</h5>
+          </div>
+          <div class="modal-body">
+            <p>
+              Coming soon
+            </p>
+            <!-- <div class="parent">
+              <a class="btn-link inl nav-link" href="https://github.com/Saber74/Panium-RPG" target="_blank">
+                <button  type="button" class="btn btn-light child"><i class="fab fa-github"></i> Github</button>
+              </a>
+            </div> -->
             <div class="modal-footer">
               <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
             </div>
