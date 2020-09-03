@@ -1,49 +1,11 @@
-/*Logo Colors
-Maple Leaf - (255, 0, 0)
-Molecule Red - (205, 0, 0)
-Molecule Grey - (205, 205, 205)
-Bright Yellow - (255, 240, 45)
-Dark Yellow - (245, 210, 45)
-*/
-.collapse{
-  background-color: #ffbb33;
-  color: black;
+html {
+  scroll-behavior: smooth;
 }
-.card{
-  background-color: White;
-  color: White;
-  text-decoration: none;
-}
-body {
-  margin: 0;
-  background-color: #17182f;
-}
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
-#particles-js{
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-color: #000;
-  background-image: linear-gradient(to bottom right ,#251A4F, #0F695F,#15072C,#0A073E);
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  z-index:-1;
-}
-/* Navigation Bar */
-nav i{
-  color: #777;
-}
-nav i:hover {
-	color: white;
-}
-.btn-dark {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+
+#intro{
+  text-align: center;
+  color: white;
+  background-color: black;
 }
 @media only screen and (max-width: 850px) {
   #laptopnav {
@@ -54,25 +16,154 @@ nav i:hover {
   #phonenav {
     display: none;
   }
+
 }
-/* Home Screen */
-#aboutimg {
-  max-width:50%;
-  height:auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.cen{
+  text-align: center;
 }
-.btn-outline-danger {
-  color: red;
-  border-color: black;
-  background-color: white;
+.nav-link{
+  color: White;
+  text-decoration: none;
 }
-.btn-outline-danger:hover {
-  background-color: #D61919;
-  border-color: #D61919;
-  color: white;
+
+#laptopnav{
+  max-height: 100px;
 }
+
+.cen{
+  text-align: center;
+}
+#phonenav button{
+  margin-bottom: 6px;
+}
+.rocket{
+  color: #eff0d1;
+}
+.rocket:hover{
+  color:#ACD8AA;
+}
+/* .github,.mail{
+  color: Black;
+} */
+
+.github:hover,.mail:hover{
+  color:#8ee3f5;
+}
+.purple a,.green a{
+  font-weight: bold;
+  text-decoration: none;
+  color:White;
+}
+.purple,.green{
+  padding-top: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.purple:hover {
+    background-color: #7b8cde!important;
+    color: White!important;
+}
+.green:hover{
+  background-color: #3ba99c!important;
+  color: White!important
+}
+.btn-1:hover{
+  background-color: #7b8cde!important;
+}
+.btn-2:hover{
+  background-color: #3ba99c!important;
+}
+.drop{
+  background-color: #eff0d1!important;
+}
+.drop:hover{
+  background-color: #ACD8AA!important;
+}
+h5.modal-title{
+  color: #ff686b;
+}
+
+/* ----------------Home Animation */
+@keyframes colorswap {
+  0%{
+    color:#7021c4;
+  }
+  35%{
+      color:#97dffc;
+  }
+  60%{
+      color:#8dbc99;
+  }
+  85%{
+      color:#f3c98b;
+  }
+  100%{
+    color:#7021c4;
+  }
+}
+
+ @keyframes moveleft {
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(20px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+@keyframes moveright {
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(-20px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+@-webkit-keyframes starwind {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 1985px 1338px, 1000px 1000px, 2000px 1375px;
+  }
+}
+@keyframes move {
+  0% {
+    left: 200px;
+  }
+  70% {
+    left: -200px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+.theme-details{
+    font-size: 17px;
+}
+.home-ani {
+    text-align: center;
+    font-size: 25px;
+	  padding-top: 30vh;
+    background: #031427 url(https://pcbx.us/bfct.png);
+    min-height: 700px;
+    -webkit-animation: starwind 20s linear infinite;
+}
+.home-ani h1 {
+    padding: 5px;
+	  text-decoration: none;
+    position: relative;
+    animation-name: colorswap;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+/* Home */
 .parent {
   display: -webkit-box;
   display: -moz-box;
@@ -87,365 +178,170 @@ nav i:hover {
   font-size: 1em;
   text-align: center;
 }
-#about, #events, #membership{
-  width: 100%;
-  background-color: rgba(255,255,255,0.3);
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 20px;
+*:focus {
+    outline: none;
 }
-.row-centered {
+/* About */
+#experience h1,#involvement h1{
   text-align: center;
-}
-.col-centered {
-  margin: 0 auto;
-  float: none;
-}
-#note{
-  color:white;
-  font-size: 1em;
-}
-#comic,#openstreet{
-  font-size: 30px;
-  color: #28a745;
-  font-weight: 600;
-  padding-top:25px;
-  padding-bottom:20px;
-  text-align: center;
-}
-#comiclogo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 85%;
-  height: auto;
-}
-.column {
-  flex: 50%;
-  padding: 5px;
-}
-h1.home, h1.events{
-  text-align: center;
-  color: yellow;
-  font-size: 2em;
-  font-weight: 700;
-}
-#inline{
-  display: inline;
-
-}
-.hours{
-  text-align: center;
-  color: white;
-}
-.price{
-  text-align: center;
-  color: white;
-}
-.left{
-  text-align: left;
-}
-#description, #jobs{
-  background-color: rgba(255,255,0,0.3);
-  padding: 20px;
-  color: white;
-}
-#timeline, #donate, #visit{
-  background-color: rgba(255,0,0,0.3);
-  padding: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-#volunteer{
-  padding: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  background-color: rgba(255,255,0,0.3);
-}
-#volunteerjob{
-  background-color: rgba(255,255,255,0.1);
-  padding: 20px;
-  color: white;
-}
-/*****************************************************/
-.timeline .timeline-item::after, .timeline .timeline-item::before {
-  clear: both;
-  content: '';
-  display: block;
-  width: 100%;
-}
-
-.timeline {
-  margin: 30px auto;
-  padding: 0 10px;
-  position: relative;
-  transition: all 0.25s ease-in;
-  width: 100%;
-}
-
-.timeline::before {
-  background: #fefefe;
-  content: '';
-  height: 100%;
-  left: 50%;
-  position: absolute;
-  top: 0;
-  width: 3px;
-}
-
-.timeline::after {
-  clear: both;
-  content: '';
-  display: table;
-  width: 100%;
-}
-
-
-.timeline .timeline-item {
-  margin-bottom: 50px;
-  position: relative;
-}
-
-.timeline .timeline-item .timeline-icon {
-  background: #fefefe;
-  border-radius: 50%;
-  height: 50px;
-  left: 50%;
-  margin-left: -23px;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 50px;
-}
-
-.timeline .timeline-item .timeline-icon img,
-.timeline .timeline-item .timeline-icon svg {
-  left: 14px;
-  position: relative;
-  top: 11px;
-}
-
-.timeline .timeline-item .timeline-icon svg {
-  top: 14px;
-}
-
-.timeline .timeline-item .timeline-content {
-  padding: 20px;
-  text-align: right;
-  transition: all 0.25s ease-in;
-  width: 45%;
-  background: transparent;
-}
-
-.timeline .timeline-item .timeline-content p {
-  color: #fefefe;
-}
-
-.timeline .timeline-item .timeline-content p {
-  font-size: 16px;
-  line-height: 1.4;
-  margin-bottom: 0;
-}
-
-.timeline .timeline-item .timeline-content .timeline-content-date {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-.timeline .timeline-item .timeline-content .timeline-content-month {
-  font-size: 0.875rem;
+  padding-top: 6.5vh;
+  font-size:2.5em;
   text-transform: uppercase;
-  font-weight: 400;
+  color: #ff686b;
 }
-
-.timeline .timeline-item .timeline-content.right {
-  float: right;
+#about h1{
+  text-align: center;
+  padding-top: 6.5vh;
+  font-size:1.0em;
+  text-transform: uppercase;
+  color: #000000;
+}
+#about h2{
+  text-align: center;
+  font-size:2.5em;
+  color: #ff686b;
+}
+#about img{
+  padding-top: 50px;
+  padding-bottom: 0px;
+  padding-left: 50px;
+  max-width: 80%;
+  overflow: hidden;
+  margin-bottom: 75px;
+  text-align: center;
+  align-self: auto;
+}
+#about h4{
+  text-align: center;
+  color: #ff686b;
+}
+#about h4:hover{
+  text-align: center;
+  color:#ACD8AA;
+}
+#about p{
+  padding-top: 45px;
+  font-size: 20px;
   text-align: left;
 }
 
-@media screen and (max-width: 39.9375em) {
-  .timeline {
-    margin: 30px;
-    padding: 0;
-    width: 90%;
+.right{
+  align-items: right;
+}
+/* About Animation */
+@-webkit-keyframes rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
   }
-  .timeline::before {
-    left: 0;
-  }
-  .timeline .timeline-item .timeline-content {
-    float: right;
-    text-align: left;
-    width: 90%;
-  }
-  .timeline .timeline-item .timeline-content::before, .timeline .timeline-item .timeline-content.right::before {
-    border-left: 0;
-    border-right: 7px solid #fefefe;
-    left: 10%;
-    margin-left: -6px;
-  }
-  .timeline .timeline-item .timeline-icon {
-    left: 0;
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
-/***************************************************************/
-/* Events */
-h1.events {
-	padding-top: 20px;
-	padding-bottom: 20px;
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
-#daycamp, #tour, #birthday, #farmersmarket, #specialevents {
-  margin-top: 20px;
-  background-color: rgba(43, 13, 144,0.3);
-  padding: 40px;
-  color: white;
+
+.rollIn {
+  -webkit-animation-name: rollIn;
+  animation-name: rollIn;
 }
-a.events {
-  color: #ffc107;
-  font-weight: 800;
+
+
+.row{
+  padding: 0px;
+  margin: 0px;
 }
-a.events:hover {
-  color: White;
+
+.blacktext{
+  text-transform: none;
+  color: Black;
+  font-size: 22px;
+  text-align: center;
 }
-img.calendar {
+.whitetext{
+  color:white;
+}
+#contact{
+  background-color: #ff686b;
+}
+.project-box{
   width: 100%;
-  height: auto;
-  margin: 10px;
+  max-width: 500px;
 }
-img.dc {
-  width: 35%;
-  height: auto;
-  margin: 5px;
-  margin-bottom: 10px;
-  border: 1px solid grey;
+#experience h3, #involvement h3{
+  font-size: 20px;
 }
-hr.events {
-  color: grey;
-}
-.btn-outline-warning {
-  color: #000000;
-  border-color: #000000;
-}
-#daycampregister {
-  margin-bottom: 20px;
-}
-#daycampregister:hover{
-  color: white;
-}
+#experience h2,#involvement h2{
+  font-weight: bold;
+  color: #fff9fb;
 
-#farmersmarket {
-  margin-bottom: 20px;
 }
-.market-pic {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 85%;
-  height: auto;
+.img-fluid{
+      filter: brightness(70%);
 }
-/*Donate*/
-#donateb{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  text-decoration: none;
+.btn-primary {
+  color:#ff686b;
+  border-color: black;
+  background-color: white;
 }
-#donateb:hover{
-  color:white;
-  text-decoration: none;
-}
-#donate a,a:hover{
-  text-decoration: none;
-}
-
-/*Partners*/
-#partners {
-  margin-bottom: 30px;
-  background-color: rgba(255,255,255,0.5);
-  padding: 20px;
+.btn-primary:hover {
+  background-color: #ff686b;
+  border-color: black;
   color: white;
 }
-#call{
-  font-weight: 900;
-  font-size: 2em;
-  color: #66AFDB;
-/*Membership*/
-}
-#membership p,li{
-  color: White;
-}
-.partner-pic {
-  width: 20%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 2%;
-}
-.partner-pic:hover {
-  width: 21%;
-  height: auto;
-}
-/*Donate*/
-#donate p,li{
+.btn-primary:active:focus{
+  background-color: #ff686b;
+  border-color: black;
   color: white;
 }
-/*Summer jobs*/
-#jobs p,li{
-  color: white;
+.btn-primary:active{
+  background-color: #ff686b!important;
+  border-color: black!important;
+  color: white!important;
 }
-/*Visit Us*/
-.map {
-  display: block;
-  width: 65%;
+.close:hover{
+  color:#ff686b!important;
+}
+.btn-light:hover{
+  color:#ff686b!important;
+  display: inline;
+}
+.inl{
+  display: inline-block;
+}
+.modal-body p{
+  font-size: 15px;
+}
+.oddete,.team{
+  font-size: 1.5em;
+  color:#ff686b;
+  text-align: center;
+}
+video{
   height: auto;
-  border: 2px solid black;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
-#directions {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-decoration:none;
-  margin-top: 20px;
-  color:black;
-}
-#directions:hover{
-  color: white;
+#about a, #about a:hover{
+  color: black;
   text-decoration: none;
 }
-#bus{
-  display: block;
-  width: 80%;
-  height: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 20px;
-}
-#tourb,#voluneerb{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  text-decoration: none;
-}
-#tourb:hover,#voluneerb:hover{
-  color:white;
-  text-decoration: none;
-}
-/* Footer */
-i.f{
-  color: #999998;
-  margin-right:10px;
-  margin-left: 10px;
-}
-i.f:hover {
-	color: black;
-}
-
-#about, #description, #events, #daycamp, #tour, #birthday, #farmersmarket, #volunteer, #jobs, #membership, #donate, #partners, #visit {
-  padding-top: 60px;
-  padding-bottom: 60px;
+#about h5:hover{
+  text-decoration: underline;
 }
