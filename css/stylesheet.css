@@ -13,7 +13,7 @@ html {
   }
 }
 @media only screen and (min-width: 851px) {
-  #phonenav {
+  .phonenav {
     display: none;
   }
 
@@ -295,6 +295,7 @@ h5.modal-title{
 }
 .img-fluid{
       filter: brightness(70%);
+      height: auto;
 }
 .btn-primary {
   color:#ff686b;

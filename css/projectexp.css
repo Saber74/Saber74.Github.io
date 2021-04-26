@@ -4,8 +4,8 @@
 }
 
 html,body {
-  font-family:helvetica neue, helvetica, arial, sans-serif;
-  &.modal-active {
+  font-family: helvetica neue, helvetica, arial, sans-serif
+  .modal-active {
     overflow: hidden;
   }
 }
@@ -80,7 +80,6 @@ html,body {
 @keyframes modalContentFadeOut {
   0% {
     opacity:1;
-    top:0px;
   }
   100% {
     opacity:0;
@@ -243,7 +242,6 @@ body {
 	position: relative;
 	overflow: hidden;
 	height: 240px;
-	max-width: 350px;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer
@@ -271,7 +269,6 @@ body {
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 2em;
-	font: #78D5D7;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	position: absolute;
@@ -680,12 +677,13 @@ body {
 }
 @media (min-width:576px) and (max-width:767px) {
 	.tab .animation .tab-text h2 {
-		font-size: 1.3rem!important;
+		font-size: 1.3rem !important;
 		font-family: Oswald
-  }
+	}
+}
 
-@media (min-width:768px) and (max-width:991px) {
+@media (min-width: 768px) and (max-width: 991px) {
 	.animation h2 {
-		font-size: 1.3rem!important
+		font-size: 1.3rem !important
 	}
 }
