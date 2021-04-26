@@ -496,13 +496,19 @@
       </div>
       <div class="modal-body">
         <p>
-          coming soon
+          BusyMap provides its users with a comprehensive and real-time platform to visually represent the busyness of areas in the form of heatmaps (using a combination of traffic data and hours of operations for places).
+          That is, enabling users to visualize what areas are crowded during what time of day.
+          BusyMap’s front-end is built with vanilla Javascript/CSS/HTML supported by a Python + Flask backend that connects to GeoTab and Google Maps’ API. Both the website and the supporting backend is hosted on a D2s v3 Microsoft Azure Ubuntu instance.
+          Front-end back-end communication is established through only RESTful calls. Our program has the potential to become fully stateless and be only running on server-less services.
+          We made use of GeoTab's UrbanInfrastructures/IdlingAreas dataset as the source of information for our traffic visualizations. Where, we can specify the hour of day and be given the congestion levels of a desired area.
+          Like mentioned above, we are using Microsoft Azure for hosting the entirety of our project on an Ubuntu instance with NGINX as our reverse-proxy. We see great potential in migrating our app to Azure Functions Serverless Compute to improve scalability and lessen the time needed for maintenance.
         </p>
-        <!-- <div class="parent"> -->
-          <!-- <a class="btn-link inl nav-link" href="https://github.com/Saber74/Mini-games-Android-Mania" target="_blank">
-            <button  type="button" class="btn btn-light child"><i class="fab fa-github"></i> Github</button>
-          </a> -->
-        <!-- </div> -->
+
+         <div class="parent">
+            <a class="btn-link inl nav-link" href="https://github.com/Saber74/busymaps" target="_blank">
+              <button  type="button" class="btn btn-light child"><i class="fab fa-github"></i> Github</button>
+            </a>
+          </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
