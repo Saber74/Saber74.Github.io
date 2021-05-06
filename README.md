@@ -2,10 +2,10 @@
 ## Hey there I am Nizar! 
 
 - I'm a 2nd year Computer Engineering student at the University of Waterloo and a tech enthusiast!
-- 🔭 I have just completed my DevOps Engineering Internship at Manulife Financial!
+- 💬 Ask me about my internships at Playstation and Manulife financial!
 - 🌱 I’m currently looking for fall 2021 internships!
 - 👯 I’m open to working on new projects and ideas!
-- ⚡ Fun fact: I love to play soccer and video games!
+- ⚡ Fun fact: I love to play soccer and video games, feel free to reach out to discuss either!
 
 
 ### Languages and Tools:
