@@ -7,10 +7,6 @@
 - 👯 I’m open to working on new projects and ideas!
 - ⚡ Fun fact: I love to play soccer and video games!
 
-
-### Connect with me:
-<code><img  alt="saber74.github.io" width="32px" href = [website] src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg"/></code>
-<code><img  alt="Nizar's LinkedIn" width="32px" href = [linkedin] src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg"/></code>
 <br />
 ### Languages and Tools:
 <code><img  alt="Python" width="32px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" /></code>
@@ -29,6 +25,9 @@
 <br />
 <br />
 
+### Connect with me:
+<code><img  alt="saber74.github.io" width="32px" href = [website] src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg"/></code>
+<code><img  alt="Nizar's LinkedIn" width="32px" href = [linkedin] src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg"/></code>
 ---
 
 <!-- <details>
