@@ -1,7 +1,14 @@
 
-## Hey there I am Nizar! 
+## Hey there I am Nizar!
+I'm a 2nd year Computer Engineering student at the University of Waterloo and a tech enthusiast!
 
-- I'm a 2nd year Computer Engineering student at the University of Waterloo and a tech enthusiast!
+Curious about: :thinking:
+- Backend Development
+- AI/ML
+- Data Science
+- Game Development
+
+### More About myself :
 - 💬 Ask me about my internships at Playstation and Manulife financial!
 - 🌱 I’m currently looking for fall 2021 internships!
 - 👯 I’m open to working on new projects and ideas!
@@ -24,7 +31,7 @@
 <code><img alt="Docker" width="32px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png" /></code>
 <br />
 
-### Connect with me: :smiley_cat:	
+### Connect with me: :smiley_cat:
 
 * [LinkedIn](https://www.linkedin.com/in/nizar-alrifai/)
 * [Email](mailto:nizar.rifai7401@gmail.com)
